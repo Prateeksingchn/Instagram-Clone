@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-zinc-900">
+    <!-- Right Sidebar for lg and xl devices -->
+    <aside
+      class="hidden md:hidden lg:block xl:block fixed left-0 top-0 w-72 h-screen bg-zinc-900 text-white z-20 border-r border-zinc-800"
+    >
+      <div class="p-5">
+        <img class="w-32 mb-10" src="/images/logo.png" alt="Instagram Logo" />
+        <nav>
+          <ul class="space-y-6">
+            <li>
+              <a
+                href="/feed"
+                class="flex items-center space-x-4 text-lg hover:text-gray-300"
+              >
+                <i class="text-[1.4rem] ri-home-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/search"
+                class="flex items-center space-x-4 text-lg hover:text-gray-300"
+              >
+                <i class="text-[1.4rem] ri-search-line"></i>
+                <span>Search</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/search"
+                class="flex items-center space-x-4 text-lg hover:text-gray-300"
+              >
+                <i class="text-[1.4rem] ri-heart-3-line"></i>
+                <span>Likes</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/search"
+                class="flex items-center space-x-4 text-lg hover:text-gray-300"
+              >
+                <i class="text-[1.4rem] ri-messenger-line"></i>
+                <span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/upload"
+                class="flex items-center space-x-4 text-lg hover:text-gray-300"
+              >
+                <i class="text-[1.4rem] ri-add-box-line"></i>
+                <span>Create</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/profile"
+                class="flex items-center space-x-4 text-lg hover:text-gray-300"
+              >
+                <div class="w-8 h-8 bg-zinc-300 rounded-full overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="/images/uploads/<%= user.picture %>"
+                    alt=""
+                  />
+                </div>
+                <span>Profile</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main content wrapper -->
+    <div class="lg:ml-64">
+      <!-- Your existing content goes here -->
+    </div>
+
+    <!-- Left Sidebar for lg and xl devices -->
+    <aside
+      class="hidden md:hidden lg:block xl:block fixed right-0 top-0 w-72 h-screen bg-zinc-900 text-white z-20 border-l border-zinc-700"
+    >
+      <div class="px-5 py-20">
+        <h2 class="text-2xl underline font-bold mb-10">Who to follow</h2>
+        <ul class="space-y-4">
+          <li class="flex items-center justify-between">
+            <div class="flex items-center">
+              <img
+                src="/api/placeholder/40/40"
+                alt="John Doe"
+                class="w-10 h-10 rounded-full mr-3"
+              />
+              <div>
+                <p class="font-semibold">John Doe</p>
+                <p class="text-sm text-gray-400">@johndoe</p>
+              </div>
+            </div>
+            <button
+              class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold"
+            >
+              Follow
+            </button>
+          </li>
+          <li class="flex items-center justify-between">
+            <div class="flex items-center">
+              <img
+                src="/api/placeholder/40/40"
+                alt="Jane Smith"
+                class="w-10 h-10 rounded-full mr-3"
+              />
+              <div>
+                <p class="font-semibold">Jane Smith</p>
+                <p class="text-sm text-gray-400">@janesmith</p>
+              </div>
+            </div>
+            <button
+              class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold"
+            >
+              Follow
+            </button>
+          </li>
+          <li class="flex items-center justify-between">
+            <div class="flex items-center">
+              <img
+                src="/api/placeholder/40/40"
+                alt="Bob Johnson"
+                class="w-10 h-10 rounded-full mr-3"
+              />
+              <div>
+                <p class="font-semibold">Bob Johnson</p>
+                <p class="text-sm text-gray-400">@bobjohnson</p>
+              </div>
+            </div>
+            <button
+              class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold"
+            >
+              Follow
+            </button>
+          </li>
+        </ul>
+        <a href="#" class="block mt-4 text-blue-400 hover:underline"
+          >Show more</a
+        >
+      </div>
+    </aside>
+  </body>
+</html>
